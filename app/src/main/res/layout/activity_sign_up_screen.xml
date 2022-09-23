@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.SignUpScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SignUpFirstNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your First Name"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_person_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SignUpLastNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Last Name"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_person_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SingUpEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_person_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SignUpPasswordId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SignUpConfPasswordId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confrom your Password"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="error text"
+            android:id="@+id/errorId"/>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxId"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and agreed Privacy Policy and Terms and Conditions"
+            android:textAlignment="center"
+            android:textSize="16.dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sign Up"
+        android:id="@+id/signUpBtnId"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_bg" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:text="Already have an Account?"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Sign Up"
+            android:id="@+id/singUpTextViewId"
+            android:textStyle="bold"
+            android:textColor="#356864" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
